@@ -1,0 +1,1 @@
+Repository for the sign-up-form project: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form#step-1-set-up-and-planning
