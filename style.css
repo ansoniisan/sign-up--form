@@ -1,0 +1,172 @@
+:root,
+:root::before,
+:root::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    line-height: 1.5;
+    --light-beige: hsl(35, 100%, 93%, 0.3);
+    --box-shadow-color: hsl(0, 0%, 0%, 0.4);
+    --light-black: hsl(0, 0%, 0%, 0.5);
+}
+
+body {
+    font-family: Outfit, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1000px;
+    height: 60vh;
+    background-color: white;
+
+    flex: none;
+    display: flex;
+}
+
+.image-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex: none;
+    position: relative;
+    flex-direction: column;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+}
+
+.background-image-overlay {
+    height: 20%;
+    width: 100%;
+    background-color: var(--light-black);
+    position: absolute;
+    top: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image-overlay img {
+    width: 13rem;
+    height: 13rem;
+}
+
+.photo-source {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    color: var(--light-beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: var(--light-beige);
+}
+
+.text-container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+}
+
+.text-container-top {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: var(--light-beige);
+}
+
+.text-container-top > p {
+    width: 45ch;
+}
+
+.text-container-middle {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 1rem 2rem 1.5rem;
+    flex: 1;
+}
+
+.text-container-bottom {
+    height: 30%;
+    background-color: var(--light-beige);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.7em 3em;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(5, 32, 81);
+    border-radius: 0.5rem;
+}
+
+button:active {
+    color: rgb(5, 32, 81);
+    background-color: white;
+}
+
+form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: #E5E7EB solid 1px;
+}
+
+input:focus {
+    border: green solid 1px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+label {
+    font-size: .8rem;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+}
+
+input:required:invalid {
+    border: solid hsl(0, 100%, 50%, 0.5) 1px;
+}
+
+input:required:valid {
+    border: solid green 1px;
+}
+
+.text-after-button-div::after {
+    content: "Log in";
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: rgb(5, 32, 81);
+}

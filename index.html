@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Righteous&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="image-container">
+            <img class="background-image" src="img/karsten-winegeart-Hco_4haT5bM-unsplash.jpg"
+                alt="A top-down view of two people walking away from the waves of a beach">
+            <div class="background-image-overlay">
+                <img src="img/ai_transparent.png" alt="ai company logo - the Japanese character for love with a smiley face in it.">
+            </div>
+            <div class="photo-source">
+                <p>Photo by <a href="https://unsplash.com/photos/aerial-view-of-a-beach-with-people-Hco_4haT5bM" target="_blank" rel="noreferrer noopener">Karsten Winegeart</a> on Unsplash</p>
+            </div>
+        </div>
+        <div class="text-container">
+            <div class="text-container-top">
+                <p class="first-p">This is not a real service! This is just a project for The Odin Project. Either way,
+                    sign up <em>now</em>!</p>
+                <p class="second-p">You <em>know</em> you want to.</p>
+            </div>
+            <div class="text-container-middle">
+                <h3>Let's do this!</h3>
+                <form action="" id="signUpForm">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPpassword" required>
+                    </div>
+                </form>
+            </div>
+            <div class="text-container-bottom">
+                <div class="button-div">
+                    <button form="signUpForm" type="submit">Create Account</button>
+                </div>
+                <div class="text-after-button-div">Already have an account?</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
